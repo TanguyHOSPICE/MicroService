@@ -85,4 +85,36 @@ docker run -p [port_local]:[port_image] nats:latest
 pnpm run start:dev
 ```
 
-# 7.Installation dans les modules
+# 7.Mises en places dans les modules /controllers /services
+
+# 8a.Mises en place MongoDb dans les fichiers
+
+https://docs.nestjs.com/techniques/mongodb
+
+```
+pnpm i @nestjs/mongoose mongoose
+
+```
+
+# 8b.imports into appModule
+
+```
+import { Module } from '@nestjs/common';
+import { MongooseModule } from '@nestjs/mongoose';
+
+@Module({
+  imports: [MongooseModule.forRoot('mongodb://localhost/nest')],
+})
+export class AppModule {}
+
+```
+
+# 9.Ajout image docker mongoDb
+
+# 10.Utilisation dB
+
+(Compass:https://docs.nestjs.com/techniques/mongodb
+ou
+studio3T:https://studio3t.com/?utm_source=license-manager&utm_medium=my-license&utm_campaign=web)
+
+# Schema dB MS (notifications)
