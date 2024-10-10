@@ -111,6 +111,10 @@ export class AppModule {}
 
 # 9.Ajout image docker mongoDb
 
+```
+docker pull mongodb/atlas
+```
+
 # 10.Utilisation dB
 
 (Compass:https://docs.nestjs.com/techniques/mongodb
